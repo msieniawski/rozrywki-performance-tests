@@ -14,6 +14,7 @@ class FetchMatchesSimulation extends Simulation {
         .exec(
             http("fetch-matches-request")
                 .post("/matches")
+                .body(RawFileBody("bodies/fetch-matches.json")).asJson
         ).pause(5)
     
     setUp(
