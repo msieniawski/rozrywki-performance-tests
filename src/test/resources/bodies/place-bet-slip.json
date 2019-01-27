@@ -1,0 +1,34 @@
+{
+  "betCount": 0,
+  "betSlipId": "string",
+  "onlineChannelName": "string",
+  "playerName": "string",
+  "siteName": "string",
+  "stake": {
+    "amount": {,
+    "amountMajor": 0,
+    "amountMajorInt": 0,
+    "amountMajorLong": 0,
+    "amountMinor": 0,
+    "amountMinorInt": 0,
+    "amountMinorLong": 0,
+    "currencyUnit": {
+      "code": "string",
+      "countryCodes": [
+        "string"
+      ],
+      "decimalPlaces": 0,
+      "numeric3Code": "string",
+      "numericCode": 0,
+      "pseudoCurrency": true,
+      "symbol": "string"
+    },
+    "minorPart": 0,
+    "negative": true,
+    "negativeOrZero": true,
+    "positive": true,
+    "positiveOrZero": true,
+    "scale": 0,
+    "zero": true
+  }
+}
