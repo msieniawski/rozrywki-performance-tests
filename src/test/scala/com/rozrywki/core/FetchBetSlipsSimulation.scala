@@ -1,12 +1,13 @@
 package com.rozrywki.core
 
+import com.rozrywki.Constants
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
 class FetchBetSlipsSimulation extends Simulation {
     
     private val httpProtocol = http
-        .baseUrl("http://34.209.198.6:8080")
+        .baseUrl(Constants.CORE_URL)
         .acceptHeader("application/json")
     
     private val scn = scenario("fetch-bet-slips")
