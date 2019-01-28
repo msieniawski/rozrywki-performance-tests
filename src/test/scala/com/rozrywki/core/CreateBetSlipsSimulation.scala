@@ -28,7 +28,7 @@ class CreateBetSlipsSimulation extends Simulation {
     setUp(
         scn.inject(
             //atOnceUsers(100)
-            constantUsersPerSec(20) during (10 minutes)
+            constantUsersPerSec(30) during (10 minutes)
         )
     ).protocols(httpProtocol)
 }
