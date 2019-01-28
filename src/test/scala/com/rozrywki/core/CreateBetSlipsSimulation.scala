@@ -3,6 +3,7 @@ package com.rozrywki.core
 import com.rozrywki.Constants
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
+import scala.concurrent.duration._
 
 class CreateBetSlipsSimulation extends Simulation {
     
@@ -19,12 +20,15 @@ class CreateBetSlipsSimulation extends Simulation {
         .exec(
             http("fetch-bet-slips-request")
                 .get("/bet-slips")
-                .queryParam("user", "test3")
+                .queryParam("user", "1")
                 .queryParam("limit", "100")
                 .queryParam("offset", "0")
         ).pause(5)
     
     setUp(
-        scn.inject(atOnceUsers(100))
+        scn.inject(
+            //atOnceUsers(100)
+            constantUsersPerSec(20) during (10 minutes)
+        )
     ).protocols(httpProtocol)
 }
