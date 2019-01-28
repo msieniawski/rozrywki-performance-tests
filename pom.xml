@@ -108,6 +108,12 @@
                         <configuration>
                             <disableCompiler>true</disableCompiler>
                             <runMultipleSimulations>true</runMultipleSimulations>
+                            <includes>
+                                <include>com.rozrywki.core.FetchBetSlipsSimulation</include>
+                            </includes>
+                            <excludes>
+                                <exclude>com.rozrywki</exclude>
+                            </excludes>
                         </configuration>
                     </execution>
                 </executions>
