@@ -109,7 +109,7 @@
                             <disableCompiler>true</disableCompiler>
                             <runMultipleSimulations>true</runMultipleSimulations>
                             <includes>
-                                <include>com.rozrywki.core.FetchBetSlipsSimulation</include>
+                                <include>com.rozrywki.core.CreateBetSlipsSimulation</include>
                             </includes>
                             <excludes>
                                 <exclude>com.rozrywki</exclude>
